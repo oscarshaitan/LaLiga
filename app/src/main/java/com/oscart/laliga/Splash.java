@@ -2,7 +2,6 @@ package com.oscart.laliga;
 
 import android.animation.Animator;
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -12,6 +11,7 @@ import com.daimajia.androidanimations.library.YoYo;
 import Retro.PostDataService;
 import Retro.RetroTeamList;
 import Retro.RetrofitClientInstance;
+import androidx.appcompat.app.AppCompatActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -28,6 +28,7 @@ public class Splash extends AppCompatActivity {
         DBFunc = new DBFunctions(this);
         service = RetrofitClientInstance.getRetrofitInstance(getApplicationContext()).create(PostDataService.class);
         getTeams();
+        animation();
     }
 
 
@@ -56,7 +57,7 @@ public class Splash extends AppCompatActivity {
     private void animation(){
         YoYo.with(Techniques.BounceInUp)
                 .duration(1000)
-                .repeat(2)
+                .repeat(5)
                 .onStart(new YoYo.AnimatorCallback() {
                     @Override
                     public void call(Animator animator) {

@@ -1,10 +1,6 @@
 package com.oscart.laliga;
 
 import android.app.Activity;
-
-import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Retro.Team;
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class TeamCellAdapter extends RecyclerView.Adapter<TeamCellAdapter.SimpleViewHolder> {
 
