@@ -58,18 +58,6 @@ public class Splash extends AppCompatActivity {
         YoYo.with(Techniques.BounceInUp)
                 .duration(1000)
                 .repeat(5)
-                .onStart(new YoYo.AnimatorCallback() {
-                    @Override
-                    public void call(Animator animator) {
-                        getTeams();
-                    }
-                })
-                .onEnd(new YoYo.AnimatorCallback() {
-                    @Override
-                    public void call(Animator animator) {
-                        startApp();
-                    }
-                })
                 .playOn(findViewById(R.id.soccer));
     }
 }

@@ -14,8 +14,6 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import java.io.IOException;
-
 import Retro.PostDataService;
 import Retro.RetroTeamEventList;
 import Retro.RetrofitClientInstance;
@@ -199,7 +197,6 @@ public class TeamDetail extends AppCompatActivity implements DetailP.DetailPrese
 
             }
         });
-
     }
 
     @Override

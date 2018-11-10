@@ -1,6 +1,7 @@
 package com.oscart.laliga;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -76,7 +77,10 @@ public class TeamCellAdapter extends RecyclerView.Adapter<TeamCellAdapter.Simple
 
 
     public void add(List<Team> dataSet){
+
+        Log.d("notify","HERE");
         this.dataSet = dataSet;
+        notifyDataSetChanged();
     }
 
 
