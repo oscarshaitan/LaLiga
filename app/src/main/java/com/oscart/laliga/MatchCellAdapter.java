@@ -75,7 +75,7 @@ public class MatchCellAdapter extends RecyclerView.Adapter<MatchCellAdapter.Simp
                     .tag(activity) //
                     .into(viewHolder.home);
         }
-        Toast.makeText(activity, "Some team are not on La Liga list team", Toast.LENGTH_SHORT).show();
+
         if(home==null){
             Picasso.get() //
                     .load(R.drawable.soccer) //
@@ -84,6 +84,7 @@ public class MatchCellAdapter extends RecyclerView.Adapter<MatchCellAdapter.Simp
                     .error(R.drawable.soccer)
                     .tag(activity) //
                     .into(viewHolder.home);
+            Toast.makeText(activity, "Some team are not on La Liga list team", Toast.LENGTH_SHORT).show();
         }
         if(away==null){
             Picasso.get() //
@@ -93,6 +94,7 @@ public class MatchCellAdapter extends RecyclerView.Adapter<MatchCellAdapter.Simp
                     .error(R.drawable.soccer)
                     .tag(activity) //
                     .into(viewHolder.away);
+            Toast.makeText(activity, "Some team are not on La Liga list team", Toast.LENGTH_SHORT).show();
         }
 
         //hay partidos donde uno de lso equips ono pertenece a la liga y adicional tienen la fecha en null

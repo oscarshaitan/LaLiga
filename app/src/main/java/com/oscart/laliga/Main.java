@@ -117,5 +117,10 @@ public class Main extends AppCompatActivity implements MainP.MainPresenter {
     public static final int ORIENTATION_PORTRAIT = 1;*/
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 
 }

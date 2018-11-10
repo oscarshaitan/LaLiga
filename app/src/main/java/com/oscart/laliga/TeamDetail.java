@@ -221,16 +221,6 @@ public class TeamDetail extends AppCompatActivity implements DetailP.DetailPrese
         return DBFunc.getTeam(TID);
     }
 
-    @Override
-    public Team getMissingTeam(String TID) throws IOException {
-        final PostDataService service = RetrofitClientInstance.getRetrofitInstance(getApplicationContext()).create(PostDataService.class);
-        return service.getTeamDetail("1",TID).execute().body();
-    }
-
-    @Override
-    public String getThisTID() {
-        return TID;
-    }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {

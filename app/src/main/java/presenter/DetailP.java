@@ -36,7 +36,5 @@ public class DetailP {
         void fillSpanish();
         void fillEnglish();
         Team getTeam(String TID);
-        Team getMissingTeam(String TID) throws IOException;
-        String getThisTID();
     }
 }
